@@ -1,3 +1,40 @@
 nav a{
     text-decoration:underline;
 }
+
+.sec_title{
+    text-align: center;
+}
+
+
+/* PROJECT GRIDS START */
+
+main #projects{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    outline:1px solid red;
+    margin-left:5%;
+    margin-right:5%;
+
+}
+
+#projects div{
+    border:1px solid blue;
+    background-color: orange;
+    height:45vh;
+    margin-bottom:5%;
+    display:flex;
+    justify-content: center;
+
+}
+
+#projects div img{
+    width:90%;
+}
+
+/* main #projects .item_four img{
+    height:41vh;
+} */
+
+/* PROJECT GRIDS END */

@@ -4,32 +4,81 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link href="images/logo.png" rel="shortcut icon">
         <title>Portfolio Site</title>
     </head>
     <body>
         <header>
             <div>
-                <img src="#" alt="logo_image">
+                <img src="images/logo.png" alt="logo_image">
                 <nav>
-                    <a href="#">Work</a>
-                    <a href="#">About</a>
-                    <a href="#">Contact</a>
+                    
+                    <a href="#about_me">About me</a>
+                    <a href="#project_section">Projects</a>
+                    <a href="#contact_me">Contact</a>
+
+                    <!-- maybe a dark and light btn <button></button> -->
                 </nav>
             </div>
         </header>
 
         <main>
              <div> <!-- Hero section  -->
-                <div></div>
+                <div id="social_media">
+                    <img src="images/github.png" alt="github logo">
+                    <img src="images/instagram.png" alt="instagram logo">
+                    <img src="images/linkedin.png" alt="linkedin logo">
+                </div>
+
+                <div id="hero_intro">
+                    <h3>Hello, I'm</h3>
+                    <h1>Marcelo Santos</h1>
+                    <p>Front-end web developer & Illustrator</p>
+                </div>
             </div>
-            <div> <!-- work section-->
-                <div></div>
+
+            <div id="about_me">
+                <h2 class="sec_title">About me</h2>
+
+                <img src="#" alt="Photo of me">
+                <p>
+                    My name is Marcelo Santos. 
+                    I was born in Brazil and have lived in the US most of my life. 
+                    I am an artist and a <a href="#">programmer</a>, I love anything to do with creativity and imagination.
+                </p>
+                <h3>My Process:</h3>
+                <p>
+                    I like to start by speaking to the client to get an insight into what it is they are looking for.
+                    I take a look at the information and content that will be going onto the page such as text, images etc. I study or build a wireframe that will suit the style of the client and the style of their content.
+                    Staying in communication is important to me, it allows me to get feedback from the client so I can make changes accordingly.
+                </p>
+            </div>
+
+            <div id="project_section"> <!-- work section-->
+                <h2 class="sec_title">Projects</h2>
+
+                <div id="projects"> 
+                    <div class="item_one"><img src="images/track-5-coffee/track-5-coffee.png" alt=""></div>
+                    <div class="item_two">Text goes here</div>
+                    <div class="item_three">Text goes here</div>
+                    <div class="item_four"><img src="images/executive bussines/executive.png" alt=""></div>
+                    <div class="item_five"><img src="images/ivy-education/ivy-education.png" alt=""></div>
+                    <div class="item_six">Text goes here</div>
+                    <div class="item_seven">Text goes here</div>
+                    <div class="item_eight"><img src="images/placeholder/placeholder.png" alt=""></div>
+                </div>
             </div>
         </main>   
 
         <footer>
-            <div></div>
+            <div id="contact_me">
+                <h2>Get in Touch!</h2>
+                <a href="tel:123-456-7890">123-456-7890
+                </a>
+                &copy
+            </div>
         </footer>
+
     </body>
 </html>
