@@ -6,12 +6,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/main.css">
         <link href="images/logo.png" rel="shortcut icon">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500&display=swap" rel="stylesheet">
         <title>Portfolio Site</title>
     </head>
     <body>
         <header>
             <div>
-                <img src="images/logo.png" alt="logo_image">
+                <img id="logo_img" src="images/logo.png" alt="logo_image">
                 <nav>
                     
                     <a href="#about_me">About me</a>
@@ -59,21 +62,56 @@
                 <h2 class="sec_title">Projects</h2>
 
                 <div id="projects"> 
-                    <div class="item_one"><img src="images/track-5-coffee/track-5-coffee.png" alt=""></div>
-                    <div class="item_two">Text goes here</div>
-                    <div class="item_three">Text goes here</div>
-                    <div class="item_four"><img src="images/executive bussines/executive.png" alt=""></div>
-                    <div class="item_five"><img src="images/ivy-education/ivy-education.png" alt=""></div>
-                    <div class="item_six">Text goes here</div>
-                    <div class="item_seven">Text goes here</div>
-                    <div class="item_eight"><img src="images/placeholder/placeholder.png" alt=""></div>
+                    <div class="item_one">
+                        <picture>
+                            <source media="(min-width: 960px)"
+                                    srcset="images/track-5-coffee/track-5-coffee.png">
+                            <source media="(min-width: 400px)"
+                                    srcset="images/track-5-coffee/track-5-coffee-mobile.png">
+                            <img src="images/track-5-coffee/track-5-coffee.png" alt="coffe shop main page">
+                        </picture>
+                    </div>
+                    <div class="item_text">Text goes here</div>
+                    <div class="item_text">Text goes here</div>
+                    
+                    <div class="item_four">
+                        <picture>
+                            <source media="(min-width: 960px)"
+                                    srcset="images/executive bussines/executive.png">
+                            <source media="(min-width: 400px)"
+                                    srcset="images/executive bussines/exdcutive-bussines-mobile.png">
+                            <img src="images/executive bussines/executive.png" alt="">
+                        </picture>
+                    </div>
+
+                    <div class="item_five">
+                        <picture>
+                            <source media="(min-width: 960px)"
+                                    srcset="images/ivy-education/ivy-education.png">
+                            <source media="(min-width: 400px)"
+                                    srcset="images/ivy-education/ivy-education-mobile.png">
+                            <img src="images/ivy-education/ivy-education.png" alt="">
+                        </picture>
+                    </div>
+                    <div class="item_text">Text goes here</div>
+                    <div class="item_text">Text goes here</div>
+
+                    <div class="item_eight">
+                        <picture>
+                            <source media="(min-width: 960px)"
+                                    srcset="images/placeholder/placeholder.png">
+                            <source media="(min-width: 400px)"
+                                    srcset="images/placeholder/placeholder-mobile.png">
+                            <img src="images/placeholder/placeholder.png" alt="">
+                        </picture>
+                    </div>
                 </div>
             </div>
         </main>   
 
         <footer>
             <div id="contact_me">
-                <h2>Get in Touch!</h2>
+                <h2 class="sec_title">Get in Touch!</h2>
                 <a href="tel:123-456-7890">123-456-7890
                 </a>
                 &copy
