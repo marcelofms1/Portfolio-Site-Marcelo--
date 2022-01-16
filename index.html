@@ -8,51 +8,66 @@
         <link href="images/logo.png" rel="shortcut icon">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
         <title>Portfolio Site</title>
     </head>
     <body>
         <header>
             <div>
                 <nav>
+                    <div id="logo_area">
+                        <img id="logo_img" src="" alt="logo_image">
+                    </div>
                     
-                    <img id="logo_img" src="images/logo.png" alt="logo_image">
-                 
-                    <a href="#about_me">About me</a>
-                    <a href="#project_section">Projects</a>
-                    <a href="#contact_me">Contact</a>
-
+                    
+                    <ul>
+                        <li><a href="#about_me_section" class="nav_btn">About me</a></li>
+                        <li><a href="#project_section" class="nav_btn">My work</a></li>
+                        <li><a href="#contact_me" class="nav_btn">Contact</a></li>
+                    </ul>
                     <!-- maybe a dark and light btn <button></button> -->
+
+                    <div id="social_media">
+                        <a href="#"><img src="images/github.png" alt="github logo"></a>
+                        <a href="#"><img src="images/instagram.png" alt="instagram logo"></a>
+                        <a href="#"><img src="images/linkedin.png" alt="linkedin logo"></a>
+                    </div>
+
                 </nav>
+
+                
+
             </div>
         </header>
 
         <main>
              <div id="welcome_page"> <!-- Hero section  -->
-                
-
-                <div id="social_media">
-                    <a href="https://github.com/marcelofms1" target="_blank"><img id="github_btn" src="images/github.png" alt="github logo"></a>
-
-                    <a href="https://www.instagram.com/design_bysantos/" target="_blank"><img src="images/instagram.png" alt="instagram logo"></a>
-
-                    <a href="https://www.linkedin.com/in/marcelo-santos-bba590187"target="_blank"><img src="images/linkedin.png" alt="linkedin logo"></a>
+    
+                <!-- remove text from main page background image -->
+                <div id="name_intro">
+                    <h3>Hello, I'm</h3>
+                    <h1>
+                        <a href="#" class="my_name">M</a><a href="#" class="my_name">a</a><a href="#" class="my_name">r</a><a href="#" class="my_name">c</a><a href="#" class="my_name">e</a><a href="#" class="my_name">l</a><a href="#" class="my_name">o</a>
+                        <a href="#" class="my_name">S</a><a href="#" class="my_name">a</a><a href="#" class="my_name">n</a><a href="#" class="my_name">t</a><a href="#" class="my_name">o</a><a href="#" class="my_name">s</a>
+                    </h1>
+                    <p>Front-end developer & illustrator</p>
                 </div>
 
             </div>
 
-            <div>
-                <h2 class="sec_title">About me</h2>
+            <div id="about_me_section">
+                <h1 id="aboutme_sec" class="sec_title">About me</h1>
 
                 <div id="about_me">
 
-                    
-                    <img src="#" alt="Photo of me">
-
                     <section class="container"><p>
-                    My name is Marcelo Santos. 
-                    I was born in Brazil and have lived in the US most of my life. 
-                    I am an artist and a programmer, I love anything to do with creativity and imagination.
+                    I'm a Front-End Developer from the United States. I have a passion for developing, creative, fun and dynamic designs.
+                    <br>
+                    I am also artist who enjoys anything to do with creativity and imagination. 
                     </p></section>
                     
                     
@@ -70,7 +85,7 @@
             </div>
 
             <div id="project_section"> <!-- work section-->
-                <h2 class="sec_title">Projects</h2>
+                <h1 class="sec_title">My work</h1>
 
                 <div id="projects"> 
                     <div class="item_one">
@@ -82,8 +97,7 @@
                             <img src="images/track-5-coffee/track-5-coffee.png" alt="coffe shop main page">
                         </picture>
                     </div>
-                    <div class="item_text">Text goes here</div>
-                    <div class="item_text">Text goes here</div>
+                    
                     
                     <div class="item_four">
                         <picture>
@@ -104,8 +118,6 @@
                             <img src="images/ivy-education/ivy-education.png" alt="">
                         </picture>
                     </div>
-                    <div class="item_text">Text goes here</div>
-                    <div class="item_text">Text goes here</div>
 
                     <div class="item_eight">
                         <picture>
