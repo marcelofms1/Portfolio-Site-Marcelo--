@@ -1,10 +1,6 @@
-#logo_img{
-    width:6%;
-}
-
 
 body{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
     /* background-color:#dcdcdc; */
     background-color: #d3fff8;
 }
@@ -12,9 +8,17 @@ body{
 
 /* NAVIGATION START */
 
-#logo_area{
+#logo_area img{
     background-color:rgba(0, 0, 0, 0.5);
-    padding:5rem;
+    width:100%;
+    /* padding:5rem; */
+}
+
+
+#arrow_img{
+    width:25%;
+    margin-left:12rem;
+    margin-top:38rem;
 }
 
 nav{
@@ -110,20 +114,22 @@ header nav a:hover{
 #welcome_page #name_intro{
     font-size: 200%;
     line-height: .8em;
-    margin-bottom: 10rem;
-    margin-top:16rem;
-    box-shadow: 5px 5px 15px;
+    margin-bottom: 15rem;
+    margin-top:14rem;
+    box-shadow: 7px 7px 5px #005b4c;
     padding:3rem;
-    border-radius:.5rem;
+    border-radius:5rem;
     background-color: #01ecc5;
+    width:90rem;
 }
 
 #welcome_page{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
+    margin-right:25rem;
     /* border:1px solid red; */
-    padding-bottom:10rem;
+    /* padding-bottom:10rem; */
 }
 /* MAIN PAGE END */
 
@@ -142,9 +148,10 @@ main #projects{
     align-items: center;
 }
 
+
 .sec_title{
     text-align: center;
-    text-decoration:underline;
+    /* text-decoration:underline; */
     margin:3%;
     margin-left:14rem;
 }
@@ -177,35 +184,23 @@ picture img{
     border-radius:.5rem;
     height:37vh;
     width:90%;
-    transition:200ms ease-in-out;
+    transition:300ms ease-in-out;
 }
 
 picture img:hover{
     filter: grayscale(0%);
-    box-shadow: 5px 5px 10px  rgb(70, 70, 70);
+    box-shadow: 8px 8px 5px #005b4c;
+    width:90%;
+    height:40vh;
+    position:relative;
 }
-
-
-.item_text{
-    /* background-color: rgb(154, 225, 47); */
-    border-radius:1rem;
-    line-height:4vh;
-    height:37vh;
-    padding:2rem;
-    width:70%;
-    font-size: 120%;
-    text-align: left;
-    display:flex;
-    /* box-shadow: 7px 7px 20px  rgb(137, 137, 137); */
-}
-
 
 /* WORK GRIDS END */
 
 /* ABOUT ME START */
 
 #aboutme_sec{
-    color:white;
+    color:#01ecc5;
 }
 
 #about_me{
@@ -213,7 +208,7 @@ picture img:hover{
     justify-content: center;
     text-align: center;
     padding-bottom:2rem;
-    margin-left:22rem;
+    margin-left:29rem;
 }
 
 #about_me_section{
@@ -223,8 +218,8 @@ picture img:hover{
 
 
 #about_me p{
-    font-size: 130%;
-    text-align: left;
+    font-size: 20px;
+    text-align: center;
     padding:2rem;
     width:80%;
     line-height: 4vh;
@@ -233,6 +228,7 @@ picture img:hover{
     text-decoration: none;
     color:white;
     font-weight:700;
+    width:70%;
     /* box-shadow: 7px 7px 20px  rgb(111, 111, 111); */
 }
 
