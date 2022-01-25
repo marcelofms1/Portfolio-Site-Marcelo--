@@ -185,14 +185,14 @@ picture img{
     border-radius:.5rem;
     height:37vh;
     width:90%;
-    transition:300ms ease-in-out;
+    transition:500ms ease-in-out;
 }
 
 picture img:hover{
     filter: grayscale(0%);
     box-shadow: 8px 8px 5px #004136;
     width:90%;
-    height:45vh;
+    height:40vh;
 }
 
 
@@ -241,8 +241,6 @@ picture img:hover{
     border-radius:.6rem;
     font-weight: 900;
     font-size:20px;
-    /* height:7vh; */
-    /* text-align:center; */
     padding:.8rem;
     
 }
@@ -253,6 +251,48 @@ picture img:hover{
     transform:rotate(360deg);
     color:white;
 }
-
-
 /* ABOUT ME END */
+
+/* MEDIA QUERY */
+
+  @media screen and (max-width: 600px) {
+
+    body{
+        max-width:100%;
+    }
+
+    nav{
+        position:fixed;
+    }
+    #about_me_section{
+       width:156%;
+       height:180vh;
+    }
+
+    #about_me p{
+        position:relative;
+        /* display:flex; */
+        /* height:20vh; */
+        line-height: 1.5;
+        width:30rem;
+        margin-left:-170%;
+    }
+
+    #button{
+        width:20%;
+    }
+
+    #welcome_page{
+        height:180vh;
+    }
+
+    #welcome_page #name_intro{
+        position:absolute;
+        width:90%;
+        text-align: center;
+        margin-left:55rem;
+        line-height: 1;
+    }
+  }
+
+/* MEDIA QUERY */
