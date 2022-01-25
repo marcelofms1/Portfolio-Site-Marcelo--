@@ -1,30 +1,27 @@
-
 body{
     font-family: 'Poppins', sans-serif;
     /* background-color:#dcdcdc; */
     background-color: #d3fff8;
 }
 
-
-/* NAVIGATION START */
-
 #logo_area img{
     background-color:rgba(0, 0, 0, 0.5);
-    width:100%;
-    /* padding:5rem; */
+    max-width:150px;
+    margin: 0 auto;
+    display:block;
+    border-radius: 1rem;
 }
-
 
 #arrow_img{
     width:25%;
     margin-left:12rem;
     margin-top:38rem;
+    display:none;
 }
 
 nav{
-    position:fixed;
-    width:12%;
-    height:100%;
+    padding-top:5px;
+    text-align: center;
     background-color: #373f3e;
 }
 
@@ -33,10 +30,6 @@ header nav a{
     color:black;
     transition:600ms ease-in-out;
     color:white;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
     padding: 2rem;
 }
 
@@ -45,56 +38,13 @@ header nav a:hover{
 }
 
 #social_media img{
-    width:35%;
+    max-width:100%;
     transition:800ms ease-in-out;
 }
 
 #social_media a img:hover{
     transform:rotate(360deg);
-    
 }
-
-.nav_btn{
-    position:relative;
-}
-
-.nav_btn::after{
-    content:'';
-    position:absolute;
-    left:0;
-    bottom:0;
-    width:100%;
-    height:1vh;
-    background:#05F9D9;
-    transform:scaleX(0);
-    transform-origin:left;
-
-    transition:600ms ease-in-out;
-}
-.nav_btn:hover::after{
-    transform:scaleX(1);
-}
-
-.nav_btn::before{
-    content:'';
-    position:absolute;
-    right:0;
-    top:0%;
-    width:100%;
-    height:1vh;
-    background:#05F9D9;
-
-    transform:scaleX(0);
-    transform-origin: right;
-
-    transition:600ms ease-in-out;
-}
-.nav_btn:hover::before{
-    transform:scaleX(1);
-}
-
-/* TOP BAR ANIMATION END */
-/* NAVIGATION END */
 
 /* MAIN PAGE START */
 #name_intro .my_name{
@@ -112,104 +62,27 @@ header nav a:hover{
 }
 
 #welcome_page #name_intro{
-    font-size: 200%;
-    line-height: .8em;
-    margin-bottom: 15rem;
-    margin-top:14rem;
+    font-size: 100%;
+    line-height: 2em;
+    margin-bottom: 5rem;
+    margin-top:4rem;
     box-shadow: 7px 7px 5px #005b4c;
     padding:3rem;
     border-radius:5rem;
     background-color: #01ecc5;
-    width:90rem;
 }
 
 #welcome_page{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-    margin-right:25rem;
-    /* border:1px solid red; */
-    /* padding-bottom:10rem; */
 }
 /* MAIN PAGE END */
 
-/* WORK GRIDS START */
-main #projects{
-    display:grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-}
-
-#projects div{
-    height:45vh;
-    margin-bottom:5%;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
 .sec_title{
     text-align: center;
-    /* text-decoration:underline; */
-    margin:3%;
-    margin-left:14rem;
-}
-
-
-main #projects .item_text{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-}
-
-img {
-    max-width: 100%;
-    height:auto;
-}
-
-#projects{
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    /* background-color:rgb(245, 244, 244); */
-    /* border-radius: 1rem; */
-    padding-left:10rem;
-    /* box-shadow: 5px 5px 15px  rgb(45, 45, 45); */
-
-}
-
-picture img{
-    filter:grayscale(100%);
-    /* filter:blur(2px); */
-    border-radius:.5rem;
-    height:37vh;
-    width:90%;
-    transition:500ms ease-in-out;
-}
-
-picture img:hover{
-    filter: grayscale(0%);
-    box-shadow: 8px 8px 5px #004136;
-    width:90%;
-    height:40vh;
-}
-
-
-/* WORK GRIDS END */
-
-/* ABOUT ME START */
-
-#aboutme_sec{
-    color:#01ecc5;
-}
-
-#about_me{
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding-bottom:2rem;
-    margin-left:29rem;
+    font-size:20px;
+    font-weight:900;
 }
 
 #about_me_section{
@@ -217,82 +90,57 @@ picture img:hover{
     padding:3rem;
 }
 
+#aboutme_sec{
+    color:#01ecc5;
+}
+
 
 #about_me p{
-    font-size: 20px;
+    font-size: 16px;
     text-align: center;
     padding:2rem;
-    width:80%;
-    line-height: 4vh;
     border-radius:1rem;
     padding:1rem;
-    text-decoration: none;
     color:white;
-    font-weight:700;
-    width:70%;
-    /* box-shadow: 7px 7px 20px  rgb(111, 111, 111); */
 }
 
 #button{
-    position:relative;
-    margin-left:42rem;
     background-color:#01ecc5;
     color:white;
     border-radius:.6rem;
     font-weight: 900;
     font-size:20px;
     padding:.8rem;
-    
+    width:15%;
+    margin:0 auto;
+    display:block;
+    text-align: center;
 }
 
-#button:hover{
-    transition:400ms ease-in-out;
-
-    transform:rotate(360deg);
-    color:white;
+#about_me_section{
+    padding:2em;
 }
-/* ABOUT ME END */
 
-/* MEDIA QUERY */
+#project_section{
+    padding:2em;
+}
 
-  @media screen and (max-width: 600px) {
+picture img{
+    /* margin:0 auto;
+    display:block; */
+    filter:grayscale(100%);
+    border-radius:.5rem;
+    width:100%;
+    transition:500ms ease-in-out;
+    margin-bottom:2em;
 
-    body{
-        max-width:100%;
-    }
+}
 
-    nav{
-        position:fixed;
-    }
-    #about_me_section{
-       width:156%;
-       height:180vh;
-    }
+picture img:hover{
+    filter: grayscale(0%);
+    box-shadow: 8px 8px 5px #004136;
+}
 
-    #about_me p{
-        position:relative;
-        /* display:flex; */
-        /* height:20vh; */
-        line-height: 1.5;
-        width:30rem;
-        margin-left:-170%;
-    }
-
-    #button{
-        width:20%;
-    }
-
-    #welcome_page{
-        height:180vh;
-    }
-
-    #welcome_page #name_intro{
-        position:absolute;
-        width:90%;
-        text-align: center;
-        margin-left:55rem;
-        line-height: 1;
-    }
-  }
-
-/* MEDIA QUERY */
+footer{
+    text-align: center;
+}
