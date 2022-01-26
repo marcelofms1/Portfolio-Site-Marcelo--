@@ -20,17 +20,17 @@ body{
 }
 
 nav{
-    padding-top:5px;
+    /* padding-top:5px; */
     text-align: center;
     background-color: #373f3e;
 }
 
 header nav a{
-    font-size:125%;
+    font-size:110%;
     color:black;
     transition:600ms ease-in-out;
     color:white;
-    padding: 2rem;
+    padding: 1rem;
 }
 
 header nav a:hover{
@@ -39,6 +39,7 @@ header nav a:hover{
 
 #social_media img{
     max-width:100%;
+    width:8%;
     transition:800ms ease-in-out;
 }
 
@@ -109,9 +110,9 @@ header nav a:hover{
     color:white;
     border-radius:.6rem;
     font-weight: 900;
-    font-size:20px;
+    font-size:15px;
     padding:.8rem;
-    width:15%;
+    width:20%;
     margin:0 auto;
     display:block;
     text-align: center;
@@ -126,21 +127,40 @@ header nav a:hover{
 }
 
 picture img{
-    /* margin:0 auto;
-    display:block; */
-    filter:grayscale(100%);
+    /* filter:grayscale(100%); */
     border-radius:.5rem;
-    width:100%;
+    max-width:100%;
     transition:500ms ease-in-out;
     margin-bottom:2em;
 
-}
-
-picture img:hover{
-    filter: grayscale(0%);
     box-shadow: 8px 8px 5px #004136;
 }
+
+/* picture img:hover{
+    filter: grayscale(0%);
+    box-shadow: 8px 8px 5px #004136;
+} */
 
 footer{
     text-align: center;
 }
+
+/* PROJECT SECTION STARTS HERE */
+
+#section_one{
+    padding:2em;
+    text-align: center;
+}
+
+#section_two{
+    background-color: #1c1c1ce5;
+    color:white;
+    padding:2em;
+    text-align: center;
+}
+
+img{
+    border-radius: .5rem;
+}
+
+
