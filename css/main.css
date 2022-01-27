@@ -42,13 +42,8 @@ header nav a:hover{
 }
 
 #social_media img{
-    max-width:100%;
-    width:8%;
+    width:6%;
     transition:800ms ease-in-out;
-}
-
-#social_media a img:hover{
-    transform:rotate(360deg);
 }
 
 /* MAIN PAGE START */
@@ -126,15 +121,10 @@ header nav a:hover{
     padding:2em;
 }
 
-#project_section{
-    padding:2em;
-}
-
  #projects img{
     /* filter:grayscale(100%); */
     border-radius:.5rem;
     max-width:100%;
-    transition:500ms ease-in-out;
     margin-bottom:2em;
 
     box-shadow: 8px 8px 5px #004136;
@@ -166,10 +156,7 @@ footer{
     text-align:center;
 }
 
-img{
-    width:100%;
-    border-radius: .5rem;
-}
+/* media query medium */
 
 @media only screen and (min-width: 1024px){
     #social_media{
@@ -178,8 +165,7 @@ img{
         padding:1em;
     }
     #social_media img{
-        height:8vh;
-
+        width:8%;
     }
 
     .container{
@@ -202,17 +188,7 @@ img{
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
     }
-    #projects div a img{
-        max-width:100%;
-        height:60vh;
-        width:90%;
-        margin-left:1.5rem;
-    }
-
-    #section_one img{
-        width:70%;
-    }
-
+   
     footer{
         text-align: center;
         background-color: #1c1c1ce5;
@@ -220,5 +196,268 @@ img{
         padding:2.3rem;
     }
 }
+
+@media only screen and (min-width: 768px){
+    #social_media img{
+        height:4vh;
+    }
+    #social_media{
+        width:45%;
+        margin:0% auto;
+        padding:1em;
+    }
+    main #projects{
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+    #projects div a img{
+        max-width:100%;
+        height:30vh;
+        width:90%;
+        margin-left:1.5rem;
+    }
+}
+
+/* media query medium */
+
+/* media query max */
+
+@media only screen and (min-width: 1440px){
+    
+    
+    /* NAVIGATION START */
+    
+    #logo_area img{
+        background-color:rgba(0, 0, 0, 0.5);
+        width:100%;
+        /* padding:5rem; */
+    }
+    
+    #arrow_img{
+        width:15%;
+        margin-left:14rem;
+        margin-top:38rem;
+        display:unset;
+    }
+    
+    nav{
+        position:fixed;
+        width:12%;
+        height:100%;
+        background-color: #373f3e;
+        padding:1em;
+        border-radius:.5rem;
+    }
+    
+    header nav a{
+        font-size:125%;
+        transition:600ms ease-in-out;
+        color:white;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 2rem;
+    }
+    
+    header nav a:hover{
+        color:#05d7bb;
+    }
+    
+    #social_media img{
+        transition:800ms ease-in-out;
+    }
+    
+    #social_media a img:hover{
+        transform:rotate(360deg);
+        
+    }
+    
+    .nav_btn{
+        position:relative;
+        margin-top:1rem;
+    }
+    
+    .nav_btn::after{
+        content:'';
+        position:absolute;
+        left:0;
+        bottom:0;
+        width:100%;
+        height:.5vh;
+        background:#05F9D9;
+        transform:scaleX(0);
+        transform-origin:left;
+    
+        transition:600ms ease-in-out;
+    }
+    .nav_btn:hover::after{
+        transform:scaleX(1);
+    }
+    
+    .nav_btn::before{
+        content:'';
+        position:absolute;
+        right:0;
+        top:0%;
+        width:100%;
+        height:.5vh;
+        background:#05F9D9;
+    
+        transform:scaleX(0);
+        transform-origin: right;
+    
+        transition:600ms ease-in-out;
+    }
+    .nav_btn:hover::before{
+        transform:scaleX(1);
+    }
+    
+    /* TOP BAR ANIMATION END */
+    /* NAVIGATION END */
+    
+    /* MAIN PAGE START */
+    #name_intro .my_name{
+        font-family: 'Permanent Marker', cursive;
+    }
+    
+    .my_name{
+        color:#ffffff;
+        transition:500ms linear;
+        
+    }
+    
+    .my_name:hover{
+        color:#00342e;
+    }
+    
+    #welcome_page #name_intro{
+        font-size: 200%;
+        line-height: .8em;
+        margin-bottom: 15rem;
+        margin-top:14rem;
+        box-shadow: 7px 7px 5px #005b4c;
+        padding:3rem;
+        border-radius:2rem;
+        background-color: #01ecc5;
+        width:90%;
+        margin-right:20rem;
+    }
+    
+    /* MAIN PAGE END */
+    
+    /* WORK GRIDS START */
+
+    #project_section{
+        border:3px solid red;
+    }
+
+    img {
+        max-width: 100%;
+        height:auto;
+    }
+
+    #projects img{
+        box-shadow:0px 0px 0px;
+        filter:grayscale(100%);
+        transition:400ms ease-in-out;
+    }
+
+    #projects img:hover{
+        filter: grayscale(0%);
+        box-shadow: 8px 8px 5px #004136;
+        
+    }
+
+    main #projects{
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+    
+    #projects div{
+        /* height:45vh; */
+        /* margin-bottom:5%; */
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    
+    .sec_title{
+        text-align: center;
+        margin:3%;
+        margin-left:14rem;
+    }
+    
+    #projects{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding-left:11rem;    
+    }
+    
+    #projects div a img{
+        width:90%;
+        height:20rem;
+    }
+
+    
+    /* WORK GRIDS END */
+    
+    /* ABOUT ME START */
+    
+    #aboutme_sec{
+        color:#01ecc5;
+        padding-right:10rem;
+
+
+    }
+    
+    #about_me{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding-bottom:2rem;
+    }
+    
+    #about_me_section{
+        background-color: #1c1c1ce5;
+        padding-left:10rem;
+
+        /* padding:3rem; */
+    }
+    
+    
+    #about_me p{
+        font-size: 20px;
+        text-align: center;
+        padding:2rem;
+        line-height: 4vh;
+        color:white;
+        font-weight:700;
+    }
+    
+    #button{        
+        background-color:#01ecc5;
+        color:white;
+        border-radius:.6rem;
+        font-weight: 900;
+        font-size:20px;
+        padding:.8rem;
+        margin-left:31rem;
+        
+    }
+    
+    #button:hover{
+        transition:400ms ease-in-out;    
+        color:white;
+    }
+    /* ABOUT ME END */
+}
+
+/* media query max */
+
 
 
