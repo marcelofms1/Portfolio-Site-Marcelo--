@@ -159,7 +159,13 @@ footer{
     text-align: center;
 }
 
+#section_three{
+    padding:2em;
+    text-align:center;
+}
+
 img{
+    max-width:100%;
     border-radius: .5rem;
 }
 
