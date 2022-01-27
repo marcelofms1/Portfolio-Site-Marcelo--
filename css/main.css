@@ -231,7 +231,6 @@ footer{
     #logo_area img{
         background-color:rgba(0, 0, 0, 0.5);
         width:100%;
-        /* padding:5rem; */
     }
     
     #arrow_img{
@@ -265,13 +264,12 @@ footer{
         color:#05d7bb;
     }
     
-    #social_media img{
-        transition:800ms ease-in-out;
+    nav #social_media a, img{
+        width:450%;
     }
-    
-    #social_media a img:hover{
-        transform:rotate(360deg);
-        
+
+    nav #social_media a img{
+        margin-right:20rem;
     }
     
     .nav_btn{
@@ -348,10 +346,6 @@ footer{
     /* MAIN PAGE END */
     
     /* WORK GRIDS START */
-
-    #project_section{
-        border:3px solid red;
-    }
 
     img {
         max-width: 100%;
