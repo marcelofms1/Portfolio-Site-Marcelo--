@@ -19,6 +19,10 @@ body{
     display:none;
 }
 
+img{
+    max-width:100%;
+}
+
 nav{
     /* padding-top:5px; */
     text-align: center;
@@ -126,7 +130,7 @@ header nav a:hover{
     padding:2em;
 }
 
-picture img{
+ #projects img{
     /* filter:grayscale(100%); */
     border-radius:.5rem;
     max-width:100%;
@@ -136,13 +140,11 @@ picture img{
     box-shadow: 8px 8px 5px #004136;
 }
 
-/* picture img:hover{
-    filter: grayscale(0%);
-    box-shadow: 8px 8px 5px #004136;
-} */
-
 footer{
     text-align: center;
+    background-color: #1c1c1ce5;
+    color:white;
+    padding:2.3rem;
 }
 
 /* PROJECT SECTION STARTS HERE */
@@ -165,8 +167,58 @@ footer{
 }
 
 img{
-    max-width:100%;
+    width:100%;
     border-radius: .5rem;
+}
+
+@media only screen and (min-width: 1024px){
+    #social_media{
+        width:40%;
+        margin:0% auto;
+        padding:1em;
+    }
+    #social_media img{
+        height:8vh;
+
+    }
+
+    .container{
+        width:60%;
+        margin:0% auto;
+    }
+
+    .my_name{
+        color:#ffffff;
+        transition:500ms linear;
+        
+    }
+    
+    .my_name:hover{
+        color:#00342e;
+    }
+
+    main #projects{
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+    #projects div a img{
+        max-width:100%;
+        height:60vh;
+        width:90%;
+        margin-left:1.5rem;
+    }
+
+    #section_one img{
+        width:70%;
+    }
+
+    footer{
+        text-align: center;
+        background-color: #1c1c1ce5;
+        color:white;
+        padding:2.3rem;
+    }
 }
 
 
