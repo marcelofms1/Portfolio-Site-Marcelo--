@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 body{
     font-family: 'Poppins', sans-serif;
     /* background-color:#dcdcdc; */
@@ -13,9 +16,6 @@ body{
 }
 
 #arrow_img{
-    width:25%;
-    margin-left:12rem;
-    margin-top:38rem;
     display:none;
 }
 
@@ -43,7 +43,7 @@ header nav a:hover{
 }
 
 #social_media img{
-    width:6%;
+    width:2em;
     transition:800ms ease-in-out;
 }
 
@@ -89,6 +89,7 @@ header nav a:hover{
 #about_me_section{
     background-color: #1c1c1ce5;
     padding:3rem;
+    text-align: center;
 }
 
 #aboutme_sec{
@@ -96,12 +97,8 @@ header nav a:hover{
 }
 
 
-#about_me p{
+#about_me{
     font-size: 16px;
-    text-align: center;
-    padding:2rem;
-    border-radius:1rem;
-    padding:1rem;
     color:white;
 }
 
@@ -111,93 +108,69 @@ header nav a:hover{
     border-radius:.6rem;
     font-weight: 900;
     font-size:15px;
-    padding:.8rem;
-    width:20%;
-    margin:0 auto;
-    display:block;
     text-align: center;
+    padding:1em;
+    
 }
 
-#about_me_section{
-    padding:2em;
+#project_section{
+    padding:1em;
 }
 
  #projects img{
     border-radius:.5rem;
-    max-width:90%;
     display:inline-block;
     margin-bottom:2em;
-    margin-left:1em;
-
     box-shadow: 8px 8px 5px #004136;
+    width:100%;
+    
 }
 
 footer{
     text-align: center;
     background-color: #1c1c1ce5;
     color:white;
-    padding:2.3rem;
-}
-footer .sec_title{
-    margin-right:7rem;
-}
-#contact_me a{
-    margin-left:7.5rem;
+    padding:2rem;
 }
 
-/* PROJECT SECTION STARTS HERE */
 
-#section_one{
-    padding:2em;
-    display:flex;
-    flex-direction: column;
-    text-align: center;
+
+
+/* media query  */
+
+@media only screen and (min-width: 768px){
+    #name_intro{
+        width:80vw;
+        text-align: center;
+    }
    
-}
-#section_one img, p{
-    width:50%;
-    margin-left:25rem;
-}
-#section_one h2{
-    margin-left:6rem;
-}
-
-
-#section_two{
-    background-color: #1c1c1ce5;
-    color:white;
-    padding:2em;
-    text-align: center;
-}
-#section_two h2, h3{
-    margin-left:6rem;
-    text-align: center;
-
+    #social_media img{
+        height:2em;
+    }
+    #social_media{
+        width:45%;
+        margin:0% auto;
+        padding:1em;
+    }
+    main #projects{
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap:1em;
+    }
 }
 
-#section_three{
-    padding:2em;
-    text-align:center;
-}
-#section_three h2{
-    margin-left: 6rem;
-}
-#section_three img{
-    width:50%;
-    margin-left:5rem;
-
-}
 /* media query medium */
 
 @media only screen and (min-width: 1024px){
 
     #social_media{
-        width:40%;
-        margin:0% auto;
-        padding:1em;
+        width:100%;
+        text-align:center;
     }
-    #social_media img{
-        width:5%;
+
+    #social_media a{
+        display:inline-block;
     }
 
     .container{
@@ -213,20 +186,6 @@ footer .sec_title{
     .my_name:hover{
         color:#00342e;
     }
-
-    main #projects{
-        display:grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-    }
-
-
-    #projects div a img{
-        max-width:100%;
-        width:90%;
-        margin-left:1.5rem;
-    }
-
    
     footer{
         text-align: center;
@@ -236,27 +195,6 @@ footer .sec_title{
     }
 }
 
-@media only screen and (min-width: 768px){
-    #social_media img{
-        height:4vh;
-    }
-    #social_media{
-        width:45%;
-        margin:0% auto;
-        padding:1em;
-    }
-    main #projects{
-        display:grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-    }
-    #projects div a img{
-        max-width:100%;
-        width:90%;
-        height:50vh;
-        margin-left:1.5rem;
-    }
-}
 
 /* media query medium */
 
@@ -275,19 +213,16 @@ footer .sec_title{
     }
     
     #arrow_img{
-        width:15%;
-        margin-left:14rem;
-        margin-top:38rem;
-        display:unset;
+        position:absolute;
     }
     
     nav{
         position:fixed;
-        width:12%;
+        width:15%;
         height:100%;
         background-color: #373f3e;
         padding:1em;
-        /* border-radius:.5rem; */
+        overflow: scroll;
     }
     
     header nav a{
@@ -304,16 +239,17 @@ footer .sec_title{
     header nav a:hover{
         color:#05d7bb;
     }
-    
-    nav #social_media a, img{
-        width:530%;
+
+    #social_media a {
+        padding:1em;
+        display:block;
     }
 
-    nav #social_media a img{
-        margin-right:24.5rem;
-        height:3vh;
+    #social_media img{
+        width:1.5em;
+        height:auto;
     }
-    
+
     .nav_btn{
         position:relative;
         margin-top:1rem;
@@ -375,19 +311,26 @@ footer .sec_title{
     #welcome_page #name_intro{
         font-size: 200%;
         line-height: .8em;
-        margin-bottom: 15rem;
-        margin-top:14rem;
         box-shadow: 7px 7px 5px #005b4c;
-        padding:3rem;
         border-radius:2rem;
         background-color: #01ecc5;
         width:90%;
-        margin-right:20rem;
+        max-width:25em;
     }
+
+
+    #welcome_page{
+        padding-left:10%;
+        height:90vh;
+    }
+   
     
     /* MAIN PAGE END */
     
     /* WORK GRIDS START */
+    #project_section{
+        padding-left:15%;
+    }
 
     img {
         max-width: 100%;
@@ -396,41 +339,27 @@ footer .sec_title{
 
     #projects img{
         box-shadow:0px 0px 0px;
-        filter:grayscale(100%);
         transition:400ms ease-in-out;
     }
 
     #projects img:hover{
-        filter: grayscale(0%);
         box-shadow: 8px 8px 5px #004136;
-        
     }
     
     #projects div{
-        /* height:45vh; */
-        /* margin-bottom:5%; */
         display:flex;
         justify-content: center;
         align-items: center;
     }
-    
-    
-    .sec_title{
-        text-align: center;
-        margin:3%;
-        margin-left:14rem;
-    }
-    
     #projects{
         align-items: center;
         justify-content: center;
         text-align: center;
-        padding-left:11rem;    
     }
     
     #projects div a img{
-        width:90%;
-        height:20rem;
+        width:85%;
+        height:auto;
     }
 
     
@@ -440,33 +369,20 @@ footer .sec_title{
     
     #aboutme_sec{
         color:#01ecc5;
-        padding-right:10rem;
-
-
-    }
-    
-    #about_me{
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        padding-bottom:2rem;
     }
     
     #about_me_section{
         background-color: #1c1c1ce5;
-        padding-left:10rem;
-
-        /* padding:3rem; */
+        margin-left:14%;
     }
     
     
     #about_me p{
         font-size: 20px;
-        text-align: center;
-        padding:2rem;
         line-height: 4vh;
         color:white;
-        font-weight:700;
+        font-weight:200;
+        padding:1em;
     }
     
     #button{        
@@ -475,9 +391,7 @@ footer .sec_title{
         border-radius:.6rem;
         font-weight: 900;
         font-size:20px;
-        padding:.8rem;
-        margin-left:31rem;
-        
+        padding:.8rem;        
     }
     
     #button:hover{
@@ -485,11 +399,66 @@ footer .sec_title{
         color:white;
     }
     /* ABOUT ME END */
-}
 
+    footer{
+        margin-left:15%;
+    }
+}
 /* media query max */
 
+/* PROJECT SECTION STARTS HERE */
 
+#section_one{
+    padding:2em;
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    text-align: center;
+}
 
+#section_two{
+    background-color: #1c1c1ce5;
+    color:white;
+    padding:2em;
+    text-align: center;
+}
+#section_two h2, h3{
+    text-align: center;
+}
+#name_intro h1{
+    text-align: center;
+}
 
+#section_three{
+    padding:2em;
+    text-align:center;
+}
+
+#section_three img{
+    width:50vw;
+}
+
+@media only screen and (min-width: 1440px){
+    #section_one{
+        padding:2em;
+        display:flex;
+        flex-direction: column;
+        text-align: center;
+        text-align: center;
+        margin-left:15%;
+    }
+    #section_one img{
+        border-radius:.5em;
+        width: 90vw;
+        height:auto;
+    }
+
+    #section_two{
+        margin-left:15%;
+    }
+
+    #section_three{
+        margin-left:15%;
+    }
+}
 
