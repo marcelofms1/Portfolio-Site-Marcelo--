@@ -32,11 +32,6 @@ nav{
     padding:.5em;
 }
 
-.navtoggle{
-    background-color:gray;
-}
-
-
 header nav a{
     font-size:110%;
     color:black;
@@ -47,6 +42,11 @@ header nav a{
 
 header nav a:hover{
     color:#05d7bb;
+}
+header nav ul{
+    list-style-type: none;
+    padding:0;
+    margin:0;
 }
 
 #social_media img{
