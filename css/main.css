@@ -13,6 +13,7 @@ body{
     margin: 0 auto;
     display:block;
     border-radius: 1rem;
+    margin-bottom:1em;
 }
 
 #arrow_img{
@@ -28,14 +29,20 @@ nav{
     /* padding-top:5px; */
     text-align: center;
     background-color: #373f3e;
+    padding:.5em;
 }
+
+.navtoggle{
+    background-color:gray;
+}
+
 
 header nav a{
     font-size:110%;
     color:black;
     transition:600ms ease-in-out;
     color:white;
-    padding: 1rem;
+    padding: 1em;
 }
 
 header nav a:hover{
@@ -45,7 +52,9 @@ header nav a:hover{
 #social_media img{
     width:2em;
     transition:800ms ease-in-out;
+    padding-top:1em;
 }
+
 
 /* MAIN PAGE START */
 #name_intro .my_name{

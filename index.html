@@ -16,6 +16,8 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+
+        <i class="fas fa-bars"></i>
         <title>Portfolio Site</title>
     </head>
     <body>
@@ -26,22 +28,25 @@
                         <div id="logo_area">
                             <img src="images/logo.gif" alt="This image will display an animated GIF">
                         </div>
-                    
-                        <a href="#about_me_section" class="nav_btn">About me</a>
+                        
+                        <div class="navtoggle" id="myNavtoggle">
+
+                            <a href="#about_me_section" class="nav_btn">About me</a>
                             <a href="#project_section" class="nav_btn">My work</a>
                             <a href="#contact_me" class="nav_btn">Contact</a>
-                        <!-- maybe a dark and light btn <button></button> -->
 
-                        <div id="social_media">
+                            <div id="social_media">
                             <a href="#"><img src="images/github.png" alt="github logo"></a>
                             <a href="#"><img src="images/instagram.png" alt="instagram logo"></a>
                             <a href="#"><img src="images/linkedin.png" alt="linkedin logo"></a>
+                            </div>
+
+                            <a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a>
+
                         </div>
+
                     </div>
                 </nav>
-
-                
-
             </div>
         </header>
 
@@ -126,7 +131,7 @@
                 &copy
             </div>
         </footer>
-
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
         <script src="script.js"></script>
     </body>
 </html>
