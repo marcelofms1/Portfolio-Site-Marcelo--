@@ -23,21 +23,26 @@
                     <img src="images/logo.gif" alt="This image will display an animated GIF">
                 </div>
             
-                <a href="index.html" class="nav_btn">About me</a>
-                    <a href="index.html" class="nav_btn">My work</a>
-                    <a href="#contact_me" class="nav_btn">Contact</a>
-                <!-- maybe a dark and light btn <button></button> -->
+                <div class="navtoggle" id="myNavtoggle">
 
-                <div id="social_media">
+                    <ul>
+                        <li><a href="#about_me_section" class="nav_btn">About me</a></li> 
+                        <li><a href="#project_section" class="nav_btn">My work</a></li> 
+                        <li><a href="#contact_me" class="nav_btn">Contact</a></li> 
+                        <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+                    </ul>
+
+                    <div id="social_media">
                     <a href="#"><img src="images/github.png" alt="github logo"></a>
                     <a href="#"><img src="images/instagram.png" alt="instagram logo"></a>
                     <a href="#"><img src="images/linkedin.png" alt="linkedin logo"></a>
+                    </div>
+
                 </div>
 
             </nav>
 
-            
-
+        
         </div>
     </header>
 
