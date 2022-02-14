@@ -126,7 +126,7 @@ header nav ul{
 
 #button{
     background-color:#01ecc5;
-    color:white;
+    color:#000000;
     border-radius:.6rem;
     font-weight: 900;
     font-size:15px;
@@ -241,13 +241,18 @@ footer{
     
     #arrow_img{
         position:absolute;
+        display:block;
+        width:6vw;
+        margin-top:9rem;
+        margin-left:10.5em;
+        /* display:inline-block; */
     }
     
     nav{
         position:fixed;
         width:15%;
         height:100%;
-        background-color: #373f3e;
+        background-color: #444e4d;
         /* padding:1em; */
         overflow: scroll;
     }
@@ -268,7 +273,7 @@ footer{
     }
 
     #social_media a {
-        padding:1em;
+        padding:.5em;
         display:block;
     }
 
@@ -348,7 +353,7 @@ footer{
 
     #welcome_page{
         padding-left:10%;
-        height:90vh;
+        height:100vh;
     }
    
     
@@ -400,7 +405,8 @@ footer{
     
     #about_me_section{
         background-color: #1c1c1ce5;
-        margin-left:14%;
+        margin-left:15%;
+        
     }
     
     
