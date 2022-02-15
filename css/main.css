@@ -154,6 +154,19 @@ footer{
     color:white;
     padding:2rem;
 }
+#contact_me{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#contact_me img{
+    align-self: center;
+    width:8vw;
+}
+#contact_me a{
+    color:white;
+    padding:1em;
+}
 
 
 
@@ -328,6 +341,7 @@ footer{
     /* MAIN PAGE START */
     #name_intro .my_name{
         font-family: 'Permanent Marker', cursive;
+        cursor:default;
     }
     
     .my_name{
@@ -436,10 +450,19 @@ footer{
     footer{
         margin-left:15%;
     }
+    #contact_me img{
+        width:4em;
+    }
 }
 /* media query max */
 
 /* PROJECT SECTION STARTS HERE */
+
+body p{
+    font-size: 18px;
+    font-weight:bold;
+}
+
 
 #section_one{
     padding:2em;
@@ -448,6 +471,7 @@ footer{
     text-align: center;
     text-align: center;
 }
+
 
 #section_two{
     background-color: #1c1c1ce5;
@@ -472,22 +496,51 @@ footer{
 }
 
 @media only screen and (min-width: 1440px){
+    body p{
+        width:70%;
+        display:inline-block;
+    }
+
     #section_one{
         padding:2em;
-        display:flex;
-        flex-direction: column;
-        text-align: center;
-        text-align: center;
         margin-left:15%;
+        /* width:60%; */
+        display:inline-block;   
     }
-    #section_one img{
+    #section_one p{
+        background-color: #01ecc589;
+        padding:2em; 
         border-radius:.5em;
-        width: 90vw;
-        height:auto;
     }
+
+    .image_sec{
+        width:80vw;
+        display:grid;
+        grid-template-columns: repeat(2, .5fr);
+        grid-template-rows: repeat(2, .5fr);
+        /* border:1px solid red; */
+        grid-gap: 2em;
+        padding-right:5em;
+        padding-left:5em;
+        margin-top:2em;
+    }
+    .image_sec h2{
+        font-weight: 900;
+        text-decoration: underline;
+        display:flex;
+        justify-content: center;
+        align-items:center;
+    }
+    .image_sec img{
+        border-radius:.5em;
+    }
+
 
     #section_two{
         margin-left:15%;
+    }
+    #section_two h2{
+        color: #01ecc5;
     }
 
     #section_three{
