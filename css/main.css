@@ -456,13 +456,12 @@ footer{
 }
 /* media query max */
 
-/* PROJECT SECTION STARTS HERE */
+/* TRACK 5 SECTION STARTS HERE */
 
 body p{
     font-size: 18px;
     font-weight:bold;
 }
-
 
 #section_one{
     padding:2em;
@@ -512,18 +511,24 @@ body p{
         padding:2em; 
         border-radius:.5em;
     }
-
+    
     .image_sec{
         width:80vw;
         display:grid;
-        grid-template-columns: repeat(2, .5fr);
-        grid-template-rows: repeat(2, .5fr);
+        grid-template-columns: repeat(2, 1fr);
+        /* grid-template-rows: repeat(2, 1fr); */
         /* border:1px solid red; */
         grid-gap: 2em;
         padding-right:5em;
         padding-left:5em;
         margin-top:2em;
     }
+
+    /* .image_sec:last-child{
+        grid-row-start: 1;
+    } */
+
+
     .image_sec h2{
         font-weight: 900;
         text-decoration: underline;
@@ -547,4 +552,6 @@ body p{
         margin-left:15%;
     }
 }
+/* TRACK 5 SECTION ENDS HERE */
+
 
