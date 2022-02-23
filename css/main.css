@@ -29,12 +29,11 @@ nav{
     /* padding-top:5px; */
     text-align: center;
     background-color: #373f3e;
-    padding:.5em;
+    /* padding:.5em; */
 }
 
 header nav a{
     font-size:110%;
-    color:black;
     transition:600ms ease-in-out;
     color:white;
     padding: 1em;
@@ -45,6 +44,7 @@ header nav a:hover{
 }
 header nav ul{
     list-style-type: none;
+    
     padding:0;
     margin:0;
 }
@@ -274,7 +274,7 @@ footer{
     
     #logo_area img{
         background-color:rgba(0, 0, 0, 0.5);
-        width:100%;
+        width:70%;
     }
     
     #arrow_img{
@@ -283,7 +283,6 @@ footer{
         width:6vw;
         margin-top:9rem;
         margin-left:10.5em;
-        /* display:inline-block; */
     }
     
     nav{
@@ -303,7 +302,7 @@ footer{
         justify-content: center;
         align-items: center;
         text-align: center;
-        padding: 1.5rem;
+        /* padding: 1.5rem; */
     }
     
     header nav a:hover{
