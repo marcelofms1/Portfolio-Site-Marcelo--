@@ -485,7 +485,7 @@ footer{
         font-size:23px;
     }
     #overview_case p{
-        margin-left:5em;
+        margin-left:8.5em;
     }
     #overview_case li{
         margin-left:5em;
@@ -509,6 +509,7 @@ footer{
 body p{
     font-size: 18px;
     font-weight:bold;
+    text-align: center;
 }
 
 #section_one{
