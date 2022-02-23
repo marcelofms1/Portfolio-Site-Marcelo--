@@ -144,14 +144,12 @@ header nav ul{
     display:inline-block;
     margin-bottom:2em;
     box-shadow: 8px 8px 5px #004136;
-    width:100%;
-    
+    width:100%; 
 }
 
 footer{
     text-align: center;
-    background-color: #1c1c1ce5;
-    color:white;
+    color:black;
     padding:2rem;
 }
 #contact_me{
@@ -168,10 +166,37 @@ footer{
     padding:1em;
 }
 
+/* CASE STUDY SECTION STARTS */
+
+.casestudy_section{
+    /* color:white; */
+    background-color: #1c1c1ce5;
+    padding:2em;
+    font-size:20px;
+    color:white;
+}
+.casestudy_section span{
+    color:#02d2af;
+    font-size:20px;
+}
+#overview_case p{
+    font-size:20px;
+}
+.casestudy_section h2{
+    text-align: center;
+    color:#02d2af;
+    text-decoration: underline;
+}
+.casestudy_section h3{
+    color:#02d2af;
+}
+#overview{
+    color:#02d2af;
+}
 
 
 
-/* media query  */
+/* MEDIA QUERY  */
 
 @media only screen and (min-width: 768px){
     #name_intro{
@@ -447,22 +472,45 @@ footer{
     }
     /* ABOUT ME END */
 
+    /* CASESTUDY START */
     footer{
         margin-left:15%;
     }
     #contact_me img{
         width:4em;
     }
-}
-/* media query max */
 
-/* PROJECT SECTION STARTS HERE */
+    .casestudy_section{
+        margin-left:15%;
+        font-size:23px;
+    }
+    #overview_case p{
+        margin-left:8.5em;
+    }
+    #overview_case li{
+        margin-left:5em;
+    }
+
+    #context_case h4{
+        margin-left:5em;
+        
+    }
+    #context_case p{
+        margin-left:7em;
+        font-size:23px;
+
+    }
+}
+/* CASESTUDY END */
+/* media query end */
+
+/* TRACK 5 SECTION STARTS HERE */
 
 body p{
     font-size: 18px;
     font-weight:bold;
+    text-align: center;
 }
-
 
 #section_one{
     padding:2em;
@@ -512,18 +560,24 @@ body p{
         padding:2em; 
         border-radius:.5em;
     }
-
+    
     .image_sec{
         width:80vw;
         display:grid;
-        grid-template-columns: repeat(2, .5fr);
-        grid-template-rows: repeat(2, .5fr);
+        grid-template-columns: repeat(2, 1fr);
+        /* grid-template-rows: repeat(2, 1fr); */
         /* border:1px solid red; */
         grid-gap: 2em;
         padding-right:5em;
         padding-left:5em;
         margin-top:2em;
     }
+
+    /* .image_sec:last-child{
+        grid-row-start: 1;
+    } */
+
+
     .image_sec h2{
         font-weight: 900;
         text-decoration: underline;
@@ -547,4 +601,6 @@ body p{
         margin-left:15%;
     }
 }
+/* TRACK 5 SECTION ENDS HERE */
+
 
