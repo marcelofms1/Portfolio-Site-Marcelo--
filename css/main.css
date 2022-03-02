@@ -151,7 +151,12 @@ footer{
     text-align: center;
     color:black;
     padding:2rem;
+
 }
+footer #contact_me a{
+    color:black;
+}
+
 #contact_me{
     display:flex;
     flex-direction: column;
@@ -254,8 +259,7 @@ footer{
    
     footer{
         text-align: center;
-        background-color: #1c1c1ce5;
-        color:white;
+        color:black;
         padding:2.3rem;
     }
 }
@@ -474,6 +478,7 @@ footer{
     /* CASESTUDY START */
     footer{
         margin-left:15%;
+        color:black;
     }
     #contact_me img{
         width:4em;
@@ -598,6 +603,9 @@ body p{
 
     #section_three{
         margin-left:15%;
+    }
+    footer a{
+        color:black;
     }
 }
 /* TRACK 5 SECTION ENDS HERE */
